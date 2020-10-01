@@ -1,0 +1,377 @@
+/*
+ You probably do not need to edit this at all.
+
+ Add some SmartMenus required styles not covered in Bootstrap 3's default CSS.
+ These are theme independent and should work with any Bootstrap 3 theme mod.
+*/
+/* sub menus arrows on desktop */
+
+.navbar-brand>img {
+    display: block;
+     float: left;
+    margin: 12px 50px 0 0;
+}
+
+.navbar-nav:not(.sm-collapsible) ul .caret {
+	position: absolute;
+	right: 0;
+	margin-top: 6px;
+	margin-right: 15px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px #dashed;
+}
+.navbar-nav:not(.sm-collapsible) ul a.has-submenu {
+	padding-right: 30px;
+}
+/* make sub menu arrows look like +/- buttons in collapsible mode */
+.navbar-nav.sm-collapsible .caret, .navbar-nav.sm-collapsible ul .caret {
+	position: absolute;
+	right: 0;
+	margin: -3px 15px 0 0;
+	padding: 0;
+	width: 32px;
+	height: 26px;
+	line-height: 24px;
+	text-align: center;
+	border-width: 1px;
+ 	border-style: solid;
+}
+.navbar-nav.sm-collapsible .caret:before {
+	content: '+';
+	font-family: monospace;
+	font-weight: bold;
+}
+.navbar-nav.sm-collapsible .open > a > .caret:before {
+	content: '-';
+}
+.navbar-nav.sm-collapsible a.has-submenu {
+	padding-right: 50px;
+}
+/* revert to Bootstrap's default carets in collapsible mode when the "data-sm-skip-collapsible-behavior" attribute is set to the ul.navbar-nav */
+.navbar-nav.sm-collapsible[data-sm-skip-collapsible-behavior] .caret, .navbar-nav.sm-collapsible[data-sm-skip-collapsible-behavior] ul .caret {
+	position: static;
+	margin: 0 0 0 2px;
+	padding: 0;
+	width: 0;
+	height: 0;
+	border-top: 4px dashed;
+	border-right: 4px solid transparent;
+	border-bottom: 0;
+	border-left: 4px solid transparent;
+}
+.navbar-nav.sm-collapsible[data-sm-skip-collapsible-behavior] .caret:before {
+	content: '' !important;
+}
+.navbar-nav.sm-collapsible[data-sm-skip-collapsible-behavior] a.has-submenu {
+	padding-right: 15px;
+}
+/* scrolling arrows for tall menus */
+.navbar-nav span.scroll-up, .navbar-nav span.scroll-down {
+	position: absolute;
+	display: none;
+	visibility: hidden;
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+.navbar-nav span.scroll-up-arrow, .navbar-nav span.scroll-down-arrow {
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 7px dashed transparent;
+	border-right: 7px dashed transparent;
+	border-bottom: 7px solid;
+	border-left: 7px dashed transparent;
+}
+.navbar-nav span.scroll-down-arrow {
+	top: 6px;
+	border-top: 7px solid;
+	border-right: 7px dashed transparent;
+	border-bottom: 7px dashed transparent;
+	border-left: 7px dashed transparent;
+}
+/* add more indentation for 2+ level sub in collapsible mode - Bootstrap normally supports just 1 level sub menus */
+.navbar-nav.sm-collapsible ul .dropdown-menu > li > a,
+.navbar-nav.sm-collapsible ul .dropdown-menu .dropdown-header {
+	padding-left: 35px;
+}
+.navbar-nav.sm-collapsible ul ul .dropdown-menu > li > a,
+.navbar-nav.sm-collapsible ul ul .dropdown-menu .dropdown-header {
+	padding-left: 45px;
+}
+.navbar-nav.sm-collapsible ul ul ul .dropdown-menu > li > a,
+.navbar-nav.sm-collapsible ul ul ul .dropdown-menu .dropdown-header {
+	padding-left: 55px;
+}
+.navbar-nav.sm-collapsible ul ul ul ul .dropdown-menu > li > a,
+.navbar-nav.sm-collapsible ul ul ul ul .dropdown-menu .dropdown-header {
+	padding-left: 65px;
+}
+/* fix SmartMenus sub menus auto width (subMenusMinWidth and subMenusMaxWidth options) */
+.navbar-nav .dropdown-menu > li > a {
+	white-space: normal;
+}
+.navbar-nav ul.sm-nowrap > li > a {
+	white-space: nowrap;
+}
+.navbar-nav.sm-collapsible ul.sm-nowrap > li > a {
+	white-space: normal;
+}
+/* fix .navbar-right subs alignment */
+.navbar-right ul.dropdown-menu {
+	left: 0;
+	right: auto;
+}
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+
+.site-branding-text {
+    float: left;
+    margin: 10px 50px 0 0;
+    padding: 12px 0;
+}
+
+.site-title {
+    height: auto;
+    font-size: 1.875rem;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 0;
+    padding: 0px;
+}
+.site-title, .site-title a {
+	color: #008ec2;
+}
+
+.site-description {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 100px)
+{
+.site-branding-text {
+    display: block;
+    float: none;
+    margin-right: 0;
+    padding: 20px 15px 10px 15px;
+    text-align: center;
+}}
+
+/*===================================================================================*/
+/*	CART ICON 
+/*===================================================================================*/
+
+.shopping-cart {
+    line-height: 2;
+    text-align: center;
+    position: relative;
+    float: right;
+    padding: 36px 10px 36px 20px;
+    background: transparent;
+    border-radius: 50%;
+}
+.shopping-cart > a.cart-icon {
+    -wekbit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: inline-block;
+    font-size: 1.000rem;
+    line-height: 1.3;
+    color: #008ec2;
+    padding: 0 7px 0 0;
+}
+.shopping-cart:hover > a { color: #008ec2; }
+.shopping-cart > a .cart-total {
+	background-color: #02071b;
+    font-family: 'Work Sans', Sans-serif;
+    font-size: 0.875rem;
+	line-height: 1;
+    color: #ffffff;
+	font-weight: 600;
+	padding: 5px;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	-wekbit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+@media (min-width: 100px) and (max-width: 990px) { 
+	.shopping-cart { float: left; }
+	.shopping-cart > a.cart-icon { color: #bbb; }
+	.shopping-cart > a .cart-total {
+		background-color: #008ec2;
+		color: #fff;
+	}
+}
+
+.navbar-wp {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	z-index: 1000;
+}
+.navbar-brand {
+	font-size: 26px;
+	height: auto;
+	line-height: 25px;
+	margin-right: 50px;
+	padding: 15px 0;
+	text-shadow: 2px 2px 1px rgba(150, 150, 183, 0.18);
+}
+.navbar-brand span.site-description {
+	font-size: 13px;
+	line-height: 0;
+}
+.navbar-wp .navbar-nav li {
+    margin: 0px;
+    padding: 31px 0;
+}
+.navbar-wp .navbar-nav > li> a {
+	position: relative;
+	color: #1b1b1b;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.4;
+	padding: 10px 22px;
+	transition: all 0.30s ease;
+	border-radius: 3px;
+}
+.navbar-wp .navbar-nav > li> a .dropdown-arrow {
+	margin-left: 4px; 
+}
+.navbar-wp .navbar-nav > .active > a, .navbar-wp .navbar-nav > .active > a:hover, .navbar-wp .navbar-nav > .active > a:focus {
+	background: none;
+}
+.navbar-wp .navbar-nav > li > ul > li > a i {
+	padding-right: 10px;
+}
+.navbar-wp .navbar-nav > .disabled > a, .navbar-wp .navbar-nav > .disabled > a:hover, .navbar-wp .navbar-nav > .disabled > a:focus {
+	background-color: transparent;
+}
+
+.navbar-base .navbar-nav > .open > a, .navbar-base .navbar-nav > .open > a:hover, .navbar-base .navbar-nav > .open > a:focus {
+	background: transparent;
+}
+.navbar-toggle {
+	border-radius: 0;
+	margin: 24px auto;
+	position: absolute;
+	right: 5%;
+	top: 0;
+	border: none;
+	box-shadow: none;
+}
+.navbar-toggle {
+ }
+.navbar-wp .dropdown-menu {
+	min-width: 200px;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	z-index: 10;
+	right: auto;
+	left: 0;
+}
+.navbar-wp .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+}
+.navbar-wp .dropdown-menu > li {
+    padding: 0 15px;
+    margin: 0;
+}
+.navbar-wp .dropdown-menu > li, .navbar-wp .dropdown-menu > li:last-child {
+	border: 0
+}
+.navbar-wp .dropdown-menu > li > a {
+	padding: 12px 5px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.4;
+	transition: all 0.30s ease;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+	color: #222;
+}
+
+
+.navbar-wp {
+	background: #fff;
+}
+.navbar-header .navbar-brand {
+	color: #222;
+}
+.navbar-wp .navbar-nav > li > a {
+	color: #222;
+}
+.navbar-wp .navbar-nav > li > a:hover, .navbar-wp .navbar-nav > li > a:focus {
+	background: transparent;
+	color: #008ec2;
+}
+.navbar-wp .navbar-nav > .active > a, .navbar-wp .navbar-nav > .active > a:hover, .navbar-wp .navbar-nav > .active > a:focus {
+	background: #008ec2;
+	color: #fff;
+}
+.navbar-wp .navbar-nav > .open > a, .navbar-wp .navbar-nav > .open > a:hover, .navbar-wp .navbar-nav > .open > a:focus {
+	background: transparent;
+	color: #008ec2;
+}
+.navbar-wp .dropdown-menu {
+	background: #02071b;
+	box-shadow: -2px 2px 3px 0 rgba(0,0,0,.1), 2px 2px 3px 0 rgba(0,0,0,.1);
+}
+.navbar-wp .dropdown-menu > li > a {
+	color: #bbb;
+}
+.navbar-wp .dropdown-menu > li > a:hover, .navbar-wp .dropdown-menu > li > a:focus {
+	background: #02071b;
+	color: #fff;
+}
+.navbar-wp .dropdown-menu > li > a:focus, .navbar-wp .dropdown-menu > li > a:hover {
+    color: #bbb;
+    background-color: #02071b;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: #02071b;
+}
+@media (max-width: 767px) {
+	/* Navbar */
+	.navbar-wp .navbar-nav li { margin: 0 20px; padding: 0; }
+	.navbar-wp .navbar-nav li > a { font-size: 0.875rem; padding: 14px 0px 14px 0px; }
+	.navbar-wp .navbar-toggle .icon-bar {
+    background: #1b1b1b !important;
+}
+.navbar-wp .navbar-nav {
+    background-color: #02071b;
+}
+.navbar-wp .navbar-nav li > a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #bbb;
+}
+.navbar-wp .navbar-nav > .active > a, .navbar-wp .navbar-nav > .active > a:hover, .navbar-wp .navbar-nav > .active > a:focus {
+    background: transparent;
+    color: #008ec2;
+}
+.navbar-wp .navbar-nav .open .dropdown-menu > li > a {
+    padding: 14px 0px;
+}
+.navbar-toggle:hover, .navbar-toggle:focus  {
+	background: transparent;
+}
+.site-branding-text {
+    padding: 8px 10px;
+}
+}

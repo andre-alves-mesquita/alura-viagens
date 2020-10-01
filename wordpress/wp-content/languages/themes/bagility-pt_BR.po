@@ -1,0 +1,171 @@
+# Translation of Themes - Bagility in Portuguese (Brazil)
+# This file is distributed under the same license as the Themes - Bagility package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-05-22 02:25:27+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Themes - Bagility\n"
+
+#. Theme Name of the theme
+msgid "Bagility"
+msgstr "Bagility"
+
+#. Description of the theme
+msgid "Bagility WordPress theme ideal for a blog, personal portfolio, business website, WooCommerce storefront, shop, business agencies, finance, corporate, travel, law firms, agency, photography, recipes, design, portfolio, arts, blogs, education, university portal, consulting, church, restaurant, medical and so on, it has a multipurpose design, widgetized footer, blog/news page and a clean look. Bagility is responsive, SEO friendly, WPML, Polylang Translation WordPress Plugin, Woocommerce, Contact Form 7, translation and RTL ready, Bagility is the perfect theme for you! check live preview: https://demo.themeansar.com/short/bagility/"
+msgstr "Bagility WordPress tema ideal para um blog, portfólio pessoal, site de negócios, loja WooCommerce, loja, agências de negócios, finanças, empresas, viagens, escritórios de advocacia, agência, fotografia, receitas, design, portfólio, artes, blogs, educação, portal universitário, consultoria, igreja, restaurante, médico e assim por diante, tem um design multiuso, rodapé widgets, blog / página de notícias e uma aparência limpa. Bagility é responsivo, SEO amigável, WPML, Plugin de WordPress de tradução de Polylang, Woocommerce, Contact Form 7, tradução e RTL pronto, Bagility é o tema perfeito para você! verifique a visualização ver ao vivo: https://demo.themeansar.com/short/bagility/"
+
+#. translators: placeholder replaced with string
+#: footer.php:50
+msgid "https://themeansar.com/"
+msgstr "https://themeansar.com/"
+
+#. Template Name of the theme
+msgid "Contact page"
+msgstr "Página de contato"
+
+#: 404.php:37
+msgid "Go Back"
+msgstr "Voltar"
+
+#: 404.php:16 404.php:20
+msgid "404"
+msgstr "404"
+
+#: search.php:25
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+#: search.php:27
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Não encontramos nenhum resultado para sua pesquisa. Tente novamente com outras palavras-chave.."
+
+#. translators: placeholder replaced with string
+#: footer.php:50
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s %2$s."
+
+#. translators: placeholder replaced with string
+#: footer.php:44
+msgid "Proudly powered by %s"
+msgstr "Orgulhosamente desenvolvido com %s"
+
+#: footer.php:41
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: inc/mnt/customize/slider.php:173
+msgid "Open link in a new tab"
+msgstr "Abrir link em nova aba"
+
+#: inc/mnt/customize/slider.php:142
+msgid "Read more"
+msgstr "Leia mais"
+
+#: 404.php:19
+msgid "Home"
+msgstr "Página inicial"
+
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Resultados da pesquisa por: %s"
+
+#. Template Name of the theme
+msgid "Homepage"
+msgstr "Página inicial"
+
+#. Template Name of the theme
+msgid "Full Width Page"
+msgstr "Página de largura total"
+
+#: content.php:40
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: inc/mnt/customize/slider.php:134
+msgid "Description"
+msgstr "Descrição"
+
+#: inc/mnt/customize/slider.php:122
+msgid "Title"
+msgstr "Título"
+
+#: inc/mnt/customize/slider.php:109
+msgid "Slider image overlay color"
+msgstr "Cor de sobreposição de imagem do slider"
+
+#: inc/mnt/customize/slider.php:96
+msgid "Enable slider image overlay"
+msgstr "Ativar sobreposição de imagem do slider"
+
+#: inc/mnt/customize/slider.php:81
+msgid "Image"
+msgstr "Imagem"
+
+#: inc/mnt/customize/slider.php:46
+msgid "Slider settings"
+msgstr "Configurações do slider"
+
+#: inc/mnt/customize/slider.php:9
+msgid "Homepage section settings"
+msgstr "Configurações da seção da página inicial"
+
+#: inc/mnt/customize/header-banner.php:38
+msgid "Banner settings"
+msgstr "Configurações do banner"
+
+#: 404.php:35
+msgid "We are sorry, but the page you are looking for does not exist."
+msgstr "Lamentamos, mas a página que você está procurando não existe."
+
+#: 404.php:34
+msgid "Oops! Page not found"
+msgstr "Opa! Página não encontrada"
+
+#: 404.php:33
+msgid "4"
+msgstr "4"
+
+#: inc/mnt/customize/slider.php:159
+msgid "Button Link"
+msgstr "Link do botão"
+
+#: inc/mnt/customize/slider.php:147
+msgid "Button Text"
+msgstr "Texto do botão"
+
+#: inc/mnt/customize/slider.php:117
+msgid "We are Best in Premium Consulting Services"
+msgstr "Somos melhores em serviços de consultoria premium"
+
+#: inc/mnt/customize/slider.php:65
+msgid "Slider Enable/Disable"
+msgstr "Slider ativar/desativar"
+
+#: inc/mnt/customize/header-banner.php:54
+msgid "Banner image Enable/Disable from all pages"
+msgstr "Imagem de banner ativar/desativar de todas as páginas"
+
+#. Template Name of the theme
+msgid "About Us"
+msgstr "Sobre nós"
+
+#: content.php:39
+msgid "Read More"
+msgstr "Leia Mais"
+
+#. Author URI of the theme
+msgid "https://themeansar.com"
+msgstr "https://themeansar.com"
+
+#. Author of the theme
+msgid "Themeansar"
+msgstr "Themeansar"
+
+#. Theme URI of the theme
+msgid "https://themeansar.com/free-themes/bagility"
+msgstr "http://themeansar.com/free-themes/bagility"
